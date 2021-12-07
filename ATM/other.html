@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ATM machine simulator - withdraw.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<img src="img/logo.png" alt="" id="logo">
+<div class="other-text">
+Your current balance is:<span id="money"></span>
+</div>
+<div class="other-text">
+Please type amount of cash you want to withdraw:
+</div>
+<form>
+  <input type="number" name="amount" pattern="[0-9]" id="amount" value="">
+  <br><br>
+  <input type="button" value="1" onclick="cashCheck(this.value)">
+  <input type="button" value="2" onclick="cashCheck(this.value)">
+  <input type="button" value="3" onclick="cashCheck(this.value)">
+  <br><br>
+  <input type="button" value="4" onclick="cashCheck(this.value)">
+  <input type="button" value="5" onclick="cashCheck(this.value)">
+  <input type="button" value="6" onclick="cashCheck(this.value)">
+  <br><br>
+  <input type="button" value="7" onclick="cashCheck(this.value)">
+  <input type="button" value="8" onclick="cashCheck(this.value)">
+  <input type="button" value="9" onclick="cashCheck(this.value)">
+  <input type="button" value="0" onclick="cashCheck(this.value)">
+  <br><br>
+  <input type="reset" value="Reset">  <a href="cashOutDone.html"> <input type="button" value="Validate" onclick="cashOut()"></a>
+  <span id="warningTwo"></span>
+  <span id="outCash"></span>
+</form>
+<script src="script/script.js"></script>
+
+</body>
+</html>

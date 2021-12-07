@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ATM machine simulator - deposit.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<img src="img/logo.png" alt="" id="logo">
+<div id="withdraw-text">
+Your current balance is: <span id="money"> </span> <strong> PLN</strong><br>
+Please type amount of cash you want to deposit:
+</div>
+<form >
+    <input type="number" name="amount" pattern="[0-9]" id="amount" value="">
+    <br><br>
+    <input type="button" value="1" onclick="otherDeposit(this.value)">
+    <input type="button" value="2" onclick="otherDeposit(this.value)">
+    <input type="button" value="3" onclick="otherDeposit(this.value)">
+    <br><br>
+    <input type="button" value="4" onclick="otherDeposit(this.value)">
+    <input type="button" value="5" onclick="otherDeposit(this.value)">
+    <input type="button" value="6" onclick="otherDeposit(this.value)">
+    <br><br>
+    <input type="button" value="7" onclick="otherDeposit(this.value)">
+    <input type="button" value="8" onclick="otherDeposit(this.value)">
+    <input type="button" value="9" onclick="otherDeposit(this.value)">
+    <input type="button" value="0" onclick="otherDeposit(this.value)">
+    <br><br>
+    <input type="reset" value="Reset">  <a href="depositDone.html"> <input type="button" value="Validate" onclick="depositDone()"></a>
+    <span id="warningTwo"></span>
+    <span id="outCash"></span>
+</form>
+<script src="script/script.js"></script>
+<script src="script/balance.js"></script>
+</body>
+</html>q

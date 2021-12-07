@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ATM machine simulator - withdraw.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<img src="img/logo.png" alt="" id="logo">
+<div id="withdrawOP-text">
+Your current balance is: <span id="money"> </span><strong> PLN</strong> <br>
+Please choose amount of cash you want to withdraw:
+</div>
+<form action="">
+    <input class="clicked" type="button" value="50" onclick="withdraw(this.value)">
+    <input class="clicked" type="button" value="100" onclick="withdraw(this.value)">
+    <br> <br>
+    <input class="clicked" type="button" value="150" onclick="withdraw(this.value)">
+    <input class="clicked" type="button" value="200" onclick="withdraw(this.value)">
+    <br> <br>
+    <input class="clicked" type="button" value="500" onclick="withdraw(this.value)">
+    <input class="clicked" type="button" value="Other amount" onclick="location.href='other.html'"><br><br>
+</form>
+<script src="script/script.js"></script>
+
+</body>
+</html>
