@@ -7,6 +7,7 @@ let passwordPin = document.getElementById("pin");
 let cashAmount = document.getElementById("amount");
 let warnning = document.getElementById("warning");
 let outCash = document.getElementById("outCash");
+let amount = document.getElementById("amountDP");
 
 function add(x) {
     if (passwordPin.value.length <= 3) {
@@ -57,3 +58,14 @@ function deposit(x){
     window.location.href = "autoDP.html";
 }
 
+function otherDeposit(x){
+    if (amount.value.length <= 4) {
+        amount.value += x;
+    }
+}
+
+
+function depositDone(){
+    let depositedValue = parseFloat(amount.value);
+    sessionStorage.setItem("depositedMoney", depositedValue);
+}

@@ -163,7 +163,7 @@ form input[type="reset"]{
 
 #autoDP-btn {
     margin: 0;
-    width:80px;
+    width:200px;
     margin: auto;
     padding-top:20px;
 }
@@ -250,6 +250,24 @@ form input[type="number"]{
     font-weight: bold;
 }
 #balanceLeft{
+    color:#00B140;
+    font-weight: bold;
+}
+
+/* depositDone.html page  */
+
+#deposit-button button{
+    font-size: 25px;
+    padding: 5px;
+    background-color: #e5e5e5;
+    border: solid 2px black;
+    border-radius: 5%;
+}
+#deposit-button{
+    padding-top:5px;
+}
+
+#dpCash,#dpBalance{
     color:#00B140;
     font-weight: bold;
 }

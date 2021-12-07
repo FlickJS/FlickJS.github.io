@@ -9,10 +9,11 @@
 <img src="img/logo.png" alt="" id="logo">
 <div id="withdraw-text">
 Your current balance is: <span id="money"> </span> <strong> PLN</strong><br>
+You can withdraw max 5 digit value!<br>
 Please type amount of cash you want to deposit:
 </div>
 <form >
-    <input type="number" name="amount" pattern="[0-9]" id="amount" value="">
+    <input type="number" name="amount" pattern="[0-9]" id="amountDP" value="">
     <br><br>
     <input type="button" value="1" onclick="otherDeposit(this.value)">
     <input type="button" value="2" onclick="otherDeposit(this.value)">
@@ -32,6 +33,6 @@ Please type amount of cash you want to deposit:
     <span id="outCash"></span>
 </form>
 <script src="script/script.js"></script>
-<script src="script/balance.js"></script>
+
 </body>
 </html>q
