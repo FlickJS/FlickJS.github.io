@@ -50,7 +50,7 @@ function withdraw(x){
     sessionStorage.setItem("autoWithdraw", autoWithdraw);
     sessionStorage.setItem("cash", parseFloat(cash - autoWithdraw));
     window.location.href = "autoWD.html";
-    } else  if {
+    } else if {
         outCash.innerHTML = `Failed to withdraw funds, the amount withdrawn must be divisible by 50 and not less than   + ${cash}`;
     }
 }
