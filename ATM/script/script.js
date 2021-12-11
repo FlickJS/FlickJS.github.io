@@ -38,6 +38,7 @@ function cashOut() {
       sessionStorage.setItem("saveWithdrawAmount", saveWithdrawAmount);
       sessionStorage.setItem("restMoney", restMoney);
       sessionStorage.setItem("cash", parseFloat(cash - cashAmount.value));
+      window.location.href = "cashOutDone.html";
     } else {
       outCash.innerHTML = `Failed to withdraw funds, the amount withdrawn must be divisible by 50 and not less than   + ${cash}`;
     }
