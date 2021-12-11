@@ -39,7 +39,7 @@ function cashOut() {
       sessionStorage.setItem("restMoney", restMoney);
       sessionStorage.setItem("cash", parseFloat(cash - cashAmount.value));
       window.location.href = "cashOutDone.html";
-    } else if {
+    } else {
       outCash.innerHTML = `Failed to withdraw funds, the amount withdrawn must be divisible by 50 and not less than   + ${cash}`;
     }
 }
@@ -50,7 +50,7 @@ function withdraw(x){
     sessionStorage.setItem("autoWithdraw", autoWithdraw);
     sessionStorage.setItem("cash", parseFloat(cash - autoWithdraw));
     window.location.href = "autoWD.html";
-    } else if {
+    } else {
         outCash.innerHTML = `Failed to withdraw funds, the amount withdrawn must be divisible by 50 and not less than   + ${cash}`;
     }
 }
