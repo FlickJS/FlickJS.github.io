@@ -46,9 +46,13 @@ function cashOut() {
 
 function withdraw(x){
     let autoWithdraw = parseFloat(x);
+    if (parseFloat(autoWithdraw)<=cash && parseFloat(autoWithdraw) % 50 === 0){
     sessionStorage.setItem("autoWithdraw", autoWithdraw);
     sessionStorage.setItem("cash", parseFloat(cash - autoWithdraw));
     window.location.href = "autoWD.html";
+    } else {
+        outCash.innerHTML = `Failed to withdraw funds, the amount withdrawn must be divisible by 50 and not less than   + ${cash}`;
+    }
 }
 
 function deposit(x){
