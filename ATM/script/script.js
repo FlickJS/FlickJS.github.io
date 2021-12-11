@@ -30,16 +30,16 @@ function cashCheck(x) {
         cashAmount.value += x;
 }
 
-
 function cashOut() {
   if (parseFloat(cashAmount.value)<=cash && parseFloat(cashAmount.value) % 50 === 0) {
-      outCash.innerHTML = "Withdraw: " + cashAmount.value + "PLN";
+      outCash.innerHTML = `Withdraw:  ${cashAmount.value} PLN`;
       let saveWithdrawAmount = parseFloat(cashAmount.value);
       let restMoney = parseFloat(cash - cashAmount.value);
       sessionStorage.setItem("saveWithdrawAmount", saveWithdrawAmount);
       sessionStorage.setItem("restMoney", restMoney);
+      sessionStorage.setItem("cash", parseFloat(cash - cashAmount.value));
     } else {
-      outCash.innerHTML = "Failed to withdraw funds, the amount withdrawn must be divisible by 50 and not less than  " + cash;
+      outCash.innerHTML = `Failed to withdraw funds, the amount withdrawn must be divisible by 50 and not less than   + ${cash}`;
     }
 }
 
@@ -55,6 +55,7 @@ function deposit(x){
     let balanceDeposit = parseFloat(+autoDeposit + +cash);
     sessionStorage.setItem("autoDeposit", autoDeposit);
     sessionStorage.setItem("cashDeposit", balanceDeposit);
+    sessionStorage.setItem("cash", parseFloat(+cash + +x));
     window.location.href = "autoDP.html";
 }
 
@@ -63,7 +64,6 @@ function otherDeposit(x){
         amount.value += x;
     }
 }
-
 
 function depositDone(){
     let depositedValue = parseFloat(amount.value);

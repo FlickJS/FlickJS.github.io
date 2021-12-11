@@ -4,3 +4,4 @@ let depositBalance = document.getElementById("dpBalance");
 
 depositAmount.innerHTML = depositedCash;
 depositBalance.innerHTML = parseFloat(+cash + +depositedCash);
+sessionStorage.setItem("cash", parseFloat(+cash + +depositedCash));
