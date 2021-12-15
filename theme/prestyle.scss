@@ -187,9 +187,10 @@ h3 {
 }
 
 .svg {
-		position:absolute;
-		left:50%;
-		transform: translateX(-50%);
-		top: 6.8vh;
+	width:20px;
+	position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 6vh;
 }
 
