@@ -8,7 +8,7 @@ function adding_styles_scripts(){
 add_action('wp_enqueue_scripts', 'adding_styles_scripts');
 
 // Custom post type
-function gt_custom_post_type(){
+function custom_post_type(){
 	register_post_type('project',
 						array(
                           'rewrite' => array('slug' => 'projects'),
@@ -28,7 +28,7 @@ function gt_custom_post_type(){
      );
 }
 
-add_action('init', 'gt_custom_post_type');
+add_action('init', 'custom_post_type');
 
 
 
