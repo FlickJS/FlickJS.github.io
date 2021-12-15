@@ -1,25 +1,27 @@
 /*
-Theme Name: Project
+Theme Name: Fast Project
 Author: Filip Burski
-Author URL: brak
-Description: Project
-Version: 1:0
-*/
-html{
-	    margin-top:0px !important;
-}	
+Author URI: google.com
+Description: A Minimal WordPress Theme.
 
-body{
-    margin:0px;
-    padding:0px;
+*/
+
+html {
+    margin-top: 0px !important;
 }
-#header{
-    width:100%;
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+    width: 100%;
     background: #FFFFFF;
     height: 84px;
 }
 
-.svg-logo{
+.svg-logo {
     position: relative;
     width: 160px;
     height: 38px;
@@ -27,11 +29,12 @@ body{
     top: 23px;
 }
 
-#main-text{
+#main-text {
     height: 483px;
-    background-color:#215398;
+    background-color: #215398;
 }
-h1{
+
+h1 {
     font-family: Rubik;
     font-style: normal;
     font-weight: 300;
@@ -39,11 +42,11 @@ h1{
     line-height: 52px;
     text-align: center;
     color: #FFFFFF;
-    padding-top:49px;
-    margin:0px;
+    padding-top: 49px;
+    margin: 0px;
 }
 
-p{
+p {
     font-family: Rubik;
     font-style: normal;
     font-weight: 300;
@@ -51,15 +54,26 @@ p{
     line-height: 32px;
     text-align: center;
     color: #FFFFFF;
-    padding-top:9px;
-    margin:0px;
+    padding-top: 9px;
+    margin: 0px;
+}
+p.text {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #2D3236;
+    margin: 0px;
 }
 
-#footer{
+#footer {
     background: #F1F6FC;
     height: auto;
 }
-h2{
+
+h2 {
     font-family: Rubik;
     font-style: normal;
     font-weight: 300;
@@ -67,22 +81,11 @@ h2{
     line-height: 52px;
     text-align: center;
     color: #2D3236;
-    padding-top:49px;
-    margin:0px;
-
+    padding-top: 49px;
+    margin: 0px;
 }
-p.text{
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 32px;
-    text-align: center;
-    color: #2D3236;
-    margin:0px;
 
-}
-h3{
+h3 {
     font-family: Rubik;
     font-style: normal;
     font-weight: 300;
@@ -90,108 +93,117 @@ h3{
     line-height: 30px;
     text-align: center;
     color: #2D3236;
-    padding-top:36px;
-    padding-bottom:24px;
-    margin:0px;
-}
-.info{
-    width:332px !important;
-    height: 228px;
-    margin:0px;
-    background-color:white;
+    padding-top: 36px;
+    padding-bottom: 24px;
+    margin: 0px;
 }
 
-.container{
-    width:auto;
-    position:relative;
-    left:50%;
-    transform:translateX(-50%);
-    display:inline-block;
-    padding-bottom:72px;
+.info {
+    width: 332px !important;
+    height: 228px;
+    margin: 0px;
+    background-color: #FFFFFF;
 }
 
+.container {
+    width: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding-bottom: 72px;
+}
 
-.box-1{
-    float:left;
-    width:332px;
-    background-color:white;
+.box-1 {
+    float: left;
+    width: 332px !important;
+    background-color: #FFFFFF;
     height: 228px;
 }
 
-.box-2{
-    float:left;
-    width:332px;
-    background-color:white;
-    margin-left:20px;
-    margin-right:20px;
+.box-2 {
+    float: left;
+    width: 332px !important;
+    background-color: #FFFFFF;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 228px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.box-3 {
+    float: left;
+    width: 332px !important;
+    background-color: #FFFFFF;
     height: 228px;
 }
-.box-3{
-    float:left;
-    width:332px;
-    background-color:white;
-    height: 228px;
+
+.head-box {
+    color: black;
+    padding-top: 30px;
 }
-.head-box{
-    color:black;
-    padding-top:30px
-}
-.text-box{
-    color:black;
-    font-size:15px;
+
+.text-box {
+    color: black;
+    font-size: 15px;
     color: #808080;
 }
 
-.word{
+.word {
     position: relative;
-    left:50%;
-    transform:translateX(-50%);
-    top:12px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 12px;
 }
 
-.splide{
-    padding-top:40px;
-    width:60%;
+.splide {
+    padding-top: 40px;
+    width: 60%;
     position: relative;
-    left:50%;
-    transform:translateX(-50%);
-    
+    left: 50%;
+    transform: translateX(-50%);
 }
-.splide__slide{
-    width:332px;
+
+.splide__slide {
+    width: 332px !important;
     height: 228px;
-    background-color:white;
+    background-color: #FFFFFF;
 }
 
-.splide__arrow--next{
-    right:-3rem !important;
+.splide__arrow--next {
+    right: -3rem !important;
     background: rgba(255, 255, 255, 0.05) !important;
 }
-
 .splide__arrow--prev {
-    left: -3rem!important;
+    left: -3rem !important;
     background: rgba(255, 255, 255, 0.05) !important;
 }
-
-.splide__arrow svg{
-    fill:#28A9E0 !important;
+.splide__arrow svg {
+    fill: #28A9E0 !important;
     height: 2.2rem !important;
-    width:2.2rem !important;
+    width: 2.2rem !important;
+}
+
+.svg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+	top: 6.8vh;
 
 }
 
-
-@media only screen and (max-width: 1056px){
-
-    .container{
-       width:332px;
-
+@media only screen and (max-width: 1056px) {
+    .container {
+        width: 332px;
     }
-    .box-2{
-        margin-top:20px;
-        margin-bottom:20px;
-        margin-left:0px;
-        margin-right:0px;
+
+    .box-2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
-

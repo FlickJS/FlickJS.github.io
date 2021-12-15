@@ -99,6 +99,9 @@ h3 {
 	transform: translateX(-50%);
 	display: inline-block;
 	padding-bottom: 72px;
+	@media only screen and (max-width: 1056px){
+		width:332px;
+	}
 }
 .box-1 {
 	float: left;
@@ -113,10 +116,16 @@ h3 {
 	margin-left: 20px;
 	margin-right: 20px;
 	height: $height;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-left: 0px;
-	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	@media only screen and (max-width: 1056px){
+		margin-top:20px;
+		margin-bottom:20px;
+		margin-left:0px;
+		margin-right:0px;
+	}
 }
 .box-3 {
 	float: left;
@@ -151,33 +160,30 @@ h3 {
 	height:$height;
 	background-color: $mainColor;
 }
-.splide__arrow--next {
-	right: -3rem !important;
-	background: rgba(255, 255, 255, 0.05) !important;
-}
-.splide__arrow--prev {
-	left: -3rem!important;
-	background: rgba(255, 255, 255, 0.05) !important;
-}
+
 .splide__arrow {
-	svg {
-		fill: #28A9E0 !important;
-		height: 2.2rem !important;
-		width: 2.2rem !important;
-	}
-}
-@media only screen and (max-width: 1056px){
+  
+  &--next {
+    right: -3rem !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+  }
 
-    .container{
-       width:332px;
-
-    }
-    .box-2{
-        margin-top:20px;
-        margin-bottom:20px;
-        margin-left:0px;
-        margin-right:0px;
-    }
+  &--prev {
+    left: -3rem!important;
+    background: rgba(255, 255, 255, 0.05) !important;
+  }
+  
+  svg {
+    fill: #28A9E0 !important;
+    height: 2.2rem !important;
+    width: 2.2rem !important;
+  }
 }
 
+.svg {
+		position:absolute;
+		left:50%;
+		transform: translateX(-50%);
+		top: 6.8vh;
+}
 
