@@ -7,6 +7,6 @@ let amountImages = parseFloat(savedMoneyAuto/50);
 for(i=0;i<amountImages;i++){
     img = new Image();
     img.src = imagePath;
-    image.style.width = amountImages * 100 + "px";
+    image.style.width = 70 + "vw";
     image.appendChild(img);
 }
