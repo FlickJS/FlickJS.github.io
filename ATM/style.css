@@ -83,6 +83,7 @@ form input[type="password"]{
     width: 150px;
     height: 50px;
     font-size: 20px;
+    text-align: center;
 }
 form input[type="button"]{
     font-size: 25px;
@@ -91,6 +92,7 @@ form input[type="button"]{
     background-color: #e5e5e5;
     border:solid 2px black;
     cursor:pointer;
+    text-align: center;
 }
 form input[type="reset"]{
     font-size: 25px;
@@ -99,6 +101,7 @@ form input[type="reset"]{
     border:solid 2px black;
     padding: 20px;
     cursor:pointer;
+    text-align: center;
 }
 /* action.html page  */
 #action-text{
@@ -241,6 +244,7 @@ form input[type="number"]{
     width: 150px;
     height: 50px;
     font-size: 20px;
+    text-align: center;
 }
 .other-text{
     padding-top:10px;
@@ -274,4 +278,7 @@ form input[type="number"]{
 #dpCash,#dpBalance{
     color:#00B140;
     font-weight: bold;
+}
+#warning,  #outCash {
+    font-size:25px;
 }
