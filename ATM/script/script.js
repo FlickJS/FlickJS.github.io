@@ -1,34 +1,42 @@
-let name = sessionStorage.getItem("name");
-let pin = sessionStorage.getItem("pin");
+const name = sessionStorage.getItem("name");
+const pin = sessionStorage.getItem("pin");
 let cash = sessionStorage.getItem("cash");
-let welcome = document.getElementById("name");
+const welcome = document.getElementById("name");
 let money = document.getElementById("money");
-let passwordPin = document.getElementById("pin");
+let password = document.getElementById("pin");
 let cashAmount = document.getElementById("amount");
 let warnning = document.getElementById("warning");
 let outCash = document.getElementById("outCash");
 let amount = document.getElementById("amountDP");
 
+if(name){
+    welcome.innerHTML = name;
+} else welcome.innerHTML = "*I dont know what is your name*";
+
+
 function add(x) {
-    if (passwordPin.value.length <= 3) {
-        passwordPin.value += x;
+    if (password.value.length <= 3) {
+        password.value += x;
     }
 }
-if(cash){
-    money.innerHTML = cash;
-} else money.innerHTML = "Your bank account is empty";
 
 function move() {
-    if(passwordPin.value === pin) {
-        window.location.href = "action.html";
+    if(password.value === pin) {
+        window.location.href = "menu.html";
     }else {
-    warnning.innerHTML = "Wrong PIN";
+        warnning.innerHTML = "Wrong PIN";
     }
 }
 
 function cashCheck(x) {
-        cashAmount.value += x;
+    cashAmount.value += x;
 }
+
+if(cash){
+    money.innerHTML = cash;
+} else money.innerHTML = "Your bank account is empty";
+
+
 
 function cashOut() {
   if (parseFloat(cashAmount.value)<=cash && parseFloat(cashAmount.value) % 50 === 0) {
@@ -49,7 +57,7 @@ function withdraw(x){
     if (parseFloat(autoWithdraw)<=cash && parseFloat(autoWithdraw) % 50 === 0){
     sessionStorage.setItem("autoWithdraw", autoWithdraw);
     sessionStorage.setItem("cash", parseFloat(cash - autoWithdraw));
-    window.location.href = "autoWD.html";
+    window.location.href = "autoWithdraw.html";
     } else {
         outCash.innerHTML = `Failed to withdraw funds, the amount withdrawn must be divisible by 50 and not less than   + ${cash}`;
     }
@@ -61,7 +69,7 @@ function deposit(x){
     sessionStorage.setItem("autoDeposit", autoDeposit);
     sessionStorage.setItem("cashDeposit", balanceDeposit);
     sessionStorage.setItem("cash", parseFloat(+cash + +x));
-    window.location.href = "autoDP.html";
+    window.location.href = "autoDeposit.html";
 }
 
 function otherDeposit(x){
@@ -74,3 +82,4 @@ function depositDone(){
     let depositedValue = parseFloat(amount.value);
     sessionStorage.setItem("depositedMoney", depositedValue);
 }
+

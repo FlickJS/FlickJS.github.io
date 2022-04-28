@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <title>ATM machine simulator</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <img src="img/logo.png" alt="" id="logo">
+     <div id="pin-text">
+         Please enter your pin:
+     </div>
+     <form>
+         <input type="password" name="pin" pattern="[0-9]{4}" maxlength="4" id="pin" value="">
+         <br><br>
+         <input type="button" value="1" onclick="add(this.value)">
+         <input type="button" value="2" onclick="add(this.value)">
+         <input type="button" value="3" onclick="add(this.value)">
+         <br><br>
+         <input type="button" value="4" onclick="add(this.value)">
+         <input type="button" value="5" onclick="add(this.value)">
+         <input type="button" value="6" onclick="add(this.value)">
+         <br><br>
+         <input type="button" value="7" onclick="add(this.value)">
+         <input type="button" value="8" onclick="add(this.value)">
+         <input type="button" value="9" onclick="add(this.value)">
+         <br><br>
+         <input type="button" value="0" onclick="add(this.value)">
+         <input type="reset" value="Reset"> <input type="button" value="Validate" onclick="move()">
+         <br><br>
+         <span id="warning"></span>
+     </form>
+     <script src="script/script.js"></script>
+ </body>
+ </html>
